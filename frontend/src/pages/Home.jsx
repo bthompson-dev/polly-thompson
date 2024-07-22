@@ -4,11 +4,12 @@ import NavBar from '../components/NavBar'
 
 const Home = () => {
   return (
-    <div className='background'> 
-      
+    <>
+    <div className='background background-one'></div> 
       <NavBar />
-      
-    </div>
+    <div className="background background-two"></div>
+  
+    </>
   )
 }
 

@@ -1,8 +1,16 @@
 .background {
-  background-image: url("../img/cropped-rojdas-cousin-reduced-red-1.jpg");
-  width: 100%;
-  height: 100vh;
+  background-attachment: fixed;
   background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-one {
+  background-image: url("../img/cropped-rojdas-cousin-reduced-red-1.jpg");
+}
+
+.background-two {
+  background-image: url("../img/spare-bedroom-photo.webp");
 }
 
 /*# sourceMappingURL=home.css.map */

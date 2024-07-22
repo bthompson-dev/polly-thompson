@@ -9,14 +9,14 @@ const NavBar = () => {
           <p>Journalist</p>
         </div>
       </div>
-      <div className="links">
-        <div className="links__container">
-          <a href="/">About</a>
-          <a href="/work">Published work</a>
-          <a href="/contact">Contact</a>
+        <div className="links">
+          <div className="links__container">
+            <a href="/">About</a>
+            <a href="/work">Published work</a>
+            <a href="/contact">Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
   );
 };
 
