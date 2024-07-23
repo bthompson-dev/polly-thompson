@@ -1,7 +1,7 @@
 .background {
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 6rem);
   overflow: hidden;
 }
 
@@ -10,7 +10,33 @@
 }
 
 .background-two {
-  background-image: url("../img/spare-bedroom-photo.webp");
+  background-image: url("../img/polly-cactus.jpg");
+  background-position: center;
+}
+
+.about__content {
+  width: 70rem;
+  margin: 0 auto;
+}
+.about__content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 6rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+.about__content img {
+  float: left;
+  object-fit: contain;
+  width: 35%;
+  margin-right: 3rem;
+}
+.about__content--text {
+  font-family: "Karla", sans-serif;
+  font-size: 1.8rem;
+  padding: 2rem;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=home.css.map */
