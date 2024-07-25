@@ -68,6 +68,11 @@ nav {
         padding: 2rem;
         color: black;
         font-family: "Karla", sans-serif;
+        transition: color 0.5s;
+
+        &:hover {
+          color: #767676;
+        }
       }
     }
   }
@@ -87,9 +92,10 @@ footer {
     background-color: rgb(118, 118, 118);
     border-radius: 50%;
     padding: 0.5rem;
+    transition: background-color 0.5s;
 
     &:hover {
-      background-color: #222;
+      background-color: rgb(10, 102, 194);
     }
 
   }

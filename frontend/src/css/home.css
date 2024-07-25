@@ -16,13 +16,14 @@
 
 .about__content {
   width: 70rem;
+  padding: 8rem 0;
   margin: 0 auto;
 }
 .about__content h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
-  padding: 6rem 0;
+  padding-bottom: 5rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
 }
@@ -34,7 +35,7 @@
 }
 .about__content--text {
   font-family: "Karla", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 2rem;
   line-height: 1.5;
 }
