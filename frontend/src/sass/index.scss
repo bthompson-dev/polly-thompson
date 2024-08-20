@@ -1,3 +1,8 @@
+// Variables
+:root {
+  --central-width: 90rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,22 +20,23 @@ nav {
 
   .title-area {
     position: absolute;
-    bottom: 6rem;
+    bottom: 7rem;
     width: 100%;
     background-image: linear-gradient(
       to bottom,
-      transparent,
-      rgba(0, 0, 0, 0) 25%,
-      rgba(53, 52, 52, 0.0001) 30%,
-      rgba(53, 52, 52, 0.02) 60%,
+      rgba(53, 52, 52, 0.005),
+      rgba(53, 52, 52, 0.07) 25%,
+      rgba(53, 52, 52, 0.1) 40%,
+      rgba(53, 52, 52, 0.14) 50%,
+      rgba(53, 52, 52, 0.22) 75%,
       rgba(53, 52, 52, 0.3)
     );
-    height: 12rem;
+    height: 16rem;
     display: flex;
     align-items: center;
 
     &__names {
-      width: 100rem;
+      width: var(--central-width);
       margin: 0 auto;
       color: white;
       font-family: "Oswald", sans-serif;
@@ -54,23 +60,25 @@ nav {
     background-color: white;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-    height: 6rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
 
     &__container {
-      width: 100rem;
+      width: var(--central-width);
       margin: 0 auto;
-      padding: 2.2rem 0;
+      display: flex;
+      gap: 3.5rem;
 
       a {
         text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: 500;
-        padding: 2rem;
+        font-size: 1.4rem;
+        font-weight: 600;
         color: black;
         font-family: "Karla", sans-serif;
         transition: color 0.5s;
 
-        &:hover {
+        &:hover, &.current {
           color: #767676;
         }
       }

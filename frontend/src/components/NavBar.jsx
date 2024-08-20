@@ -1,6 +1,9 @@
 import React from "react";
 
-const NavBar = () => {
+const NavBar = ({current}) => {
+
+  console.log(current)
+
   return (
     <nav>
       <div className="title-area">
@@ -9,14 +12,21 @@ const NavBar = () => {
           <p>Journalist</p>
         </div>
       </div>
-        <div className="links">
-          <div className="links__container">
+      <div className="links">
+        <div className="links__container">
+          {current == "home" ? (
+            <a href="/" className="current">
+              About
+            </a>
+          ) : (
             <a href="/">About</a>
-            <a href="/work">Published work</a>
-            <a href="/contact">Contact</a>
-          </div>
+          )}
+
+          <a href="/work">Published work</a>
+          <a href="/contact">Contact</a>
         </div>
-      </nav>
+      </div>
+    </nav>
   );
 };
 

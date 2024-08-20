@@ -9,14 +9,17 @@ const Home = () => {
   );
 
   return (
-    <>
+    <div id="homepage">
       <div className="background background-one"></div>
-      <NavBar />
+      <NavBar current="home" />
       <div className="background background-two"></div>
       <div className="about">
         <div className="about__content">
           <h2>About</h2>
-          {loading ? (
+
+          {error ? (
+            `${error}`
+          ) : loading ? (
             "Loading..."
           ) : (
             <img
@@ -27,13 +30,18 @@ const Home = () => {
               alt="Polly Thompson Profile"
             />
           )}
+
           <div className="about__content--text">
-            {loading ? "Loading..." : data.data.attributes.text}
+            {error
+              ? `${error}`
+              : loading
+              ? "Loading..."
+              : data.data.attributes.text}
           </div>
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

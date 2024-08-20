@@ -1,47 +1,48 @@
-.background {
+#homepage {
+  .background {
     background-attachment: fixed;
     background-size: cover;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 7rem);
     overflow: hidden;
-}
+  }
 
-.background-one {
-    background-image: url('../img/cropped-rojdas-cousin-reduced-red-1.jpg');
-}
+  .background-one {
+    background-image: url("../img/cropped-rojdas-cousin-reduced-red-1.jpg");
+  }
 
-.background-two {
-    background-image: url('../img/polly-cactus.jpg');
+  .background-two {
+    background-image: url("../img/polly-cactus.jpg");
     background-position: center;
-}
+  }
 
-.about {
+  .about {
     &__content {
-        width: 70rem;
-        padding: 8rem 0;
-        margin: 0 auto;
+      width: 70rem;
+      padding: 8rem 0;
+      margin: 0 auto;
 
-        h2 {
-            font-family: "Oswald", sans-serif;
-            font-size: 1.5rem;
-            font-weight: 300;
-            padding-bottom: 5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-        }
+      h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+      }
 
-        img {
-                float: left;
-                object-fit: contain;
-                width: 35%;
-                margin-right: 3rem;
-            }
-        
+      img {
+        float: left;
+        object-fit: contain;
+        width: 35%;
+        margin-right: 3rem;
+      }
 
-        &--text {
-            font-family: "Karla", sans-serif;
-            font-size: 1.6rem;
-            padding: 2rem;
-            line-height: 1.5;
-        }
+      &--text {
+        font-family: "Karla", sans-serif;
+        font-size: 1.6rem;
+        padding: 2rem;
+        line-height: 1.5;
+      }
     }
+  }
 }

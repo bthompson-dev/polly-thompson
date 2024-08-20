@@ -27,7 +27,7 @@ const useFetch = (uri) => {
         fetchData()
     }, [uri])
 
-    return { loading, error, data }
+    return { data, loading, error }
 
 }
 

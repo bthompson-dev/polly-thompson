@@ -1,0 +1,11 @@
+#work .background {
+  background-attachment: fixed;
+  background-size: cover;
+  height: 16rem;
+  overflow: hidden;
+}
+#work .background-one {
+  background-image: url("../img/cropped-rojdas-cousin-reduced-red-1.jpg");
+}
+
+/*# sourceMappingURL=work.css.map */
