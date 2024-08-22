@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "headline": {
       "type": "string",
       "required": true,
       "unique": true
@@ -36,6 +36,9 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "category": {
+      "type": "string"
     }
   }
 }

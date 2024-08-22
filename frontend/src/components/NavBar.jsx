@@ -2,8 +2,6 @@ import React from "react";
 
 const NavBar = ({current}) => {
 
-  console.log(current)
-
   return (
     <nav>
       <div className="title-area">

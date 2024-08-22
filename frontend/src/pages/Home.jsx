@@ -15,7 +15,7 @@ const Home = () => {
       <div className="background background-two"></div>
       <div className="about">
         <div className="about__content">
-          <h2>About</h2>
+          <h2 className="section-header">About</h2>
 
           {error ? (
             `${error}`

@@ -7,5 +7,30 @@
 #work .background-one {
   background-image: url("../img/cropped-rojdas-cousin-reduced-red-1.jpg");
 }
+#work .work-grid {
+  width: 110rem;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+#work .work-grid__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 3rem;
+}
+#work .work-grid__grid .article__img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+#work .work-grid__grid .article__headline {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  position: relative;
+  bottom: 3rem;
+  left: 1rem;
+  background-color: white;
+  white-space: pre-wrap;
+  display: inline;
+}
 
 /*# sourceMappingURL=work.css.map */

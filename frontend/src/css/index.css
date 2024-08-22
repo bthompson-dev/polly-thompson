@@ -69,6 +69,15 @@ nav .links__container a:hover, nav .links__container a.current {
   color: #767676;
 }
 
+.section-header {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
 footer {
   width: 100%;
   height: 6rem;

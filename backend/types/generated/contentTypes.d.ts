@@ -406,11 +406,12 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String & Attribute.Required & Attribute.Unique;
+    headline: Attribute.String & Attribute.Required & Attribute.Unique;
     date: Attribute.Date & Attribute.Required;
     picture: Attribute.Media;
     body: Attribute.RichText;
     link: Attribute.String & Attribute.Required & Attribute.Unique;
+    category: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
