@@ -8,14 +8,14 @@
   background-image: url("../img/cropped-rojdas-cousin-reduced-red-1.jpg");
 }
 #work .work-grid {
-  width: 110rem;
+  width: 71vw;
   margin: 0 auto;
   padding: 8rem 0;
 }
 #work .work-grid__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
-  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 5rem;
   justify-content: space-between;
 }
 #work .work-grid__grid a {
@@ -53,6 +53,7 @@
 }
 #work .work-grid__grid a .article:hover {
   transform: translateY(-0.5rem);
+  z-index: -1;
 }
 
 /*# sourceMappingURL=work.css.map */

@@ -1,7 +1,6 @@
 import React from "react";
 
-const NavBar = ({current}) => {
-
+const NavBar = ({ current }) => {
   return (
     <nav>
       <div className="title-area">
@@ -20,7 +19,22 @@ const NavBar = ({current}) => {
             <a href="/">About</a>
           )}
 
-          <a href="/work">Published work</a>
+          <div className="links__container--work">
+            {current == "work" ? (
+              <p className="current">Published work
+              <img src="src/img/svg/down-arrow.svg" className="down-arrow"/>
+              </p>
+            ) : (
+              <p>Published work
+              <img src="img/svg/down-arrow.svg" alt="" />
+              </p>
+            )}
+            <div className="dropdown">
+              <a href="/articles"> Articles </a>
+              <a href="/video"> Video & Audio </a>
+            </div>
+          </div>
+
           <a href="/contact">Contact</a>
         </div>
       </div>
