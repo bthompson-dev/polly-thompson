@@ -89,11 +89,10 @@ nav {
         .down-arrow {
           height: 1.4rem;
           width: 1.4rem;
+        }
       }
-    }
 
       &--work {
-
         p {
           display: flex;
           align-items: center;
@@ -106,7 +105,7 @@ nav {
           border: 1px solid #bbb;
           top: 6rem;
           transform: translateX(-1rem);
-          
+
           a {
             display: block;
             width: 15rem;
@@ -118,20 +117,34 @@ nav {
               background-color: #767676;
               color: white;
             }
-
           }
 
-        
+          &::before, &::after {
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: -0.7rem;
+            right: 2.2rem;
+            border-style: solid;
+            border-width: 0px 6px 6px;
+            border-color: transparent transparent #bbb;
+            display: block;
+          }
+
+          &::after {
+            border-color: transparent transparent white;
+            top: -0.6rem;
+          }
+
         }
 
         &:hover {
-
           .dropdown {
             display: flex;
             flex-direction: column;
           }
         }
-
       }
     }
   }

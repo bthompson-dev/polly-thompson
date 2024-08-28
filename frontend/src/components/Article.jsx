@@ -1,7 +1,6 @@
 import { format } from "date-fns";
 
 const Article = ({ article }) => {
-  console.log(article);
 
   let snippet = article.attributes.body.split(" ").slice(0, 19).join(" ");
   let date = format(Date.parse(article.attributes.date), "do MMMM y");

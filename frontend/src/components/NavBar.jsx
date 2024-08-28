@@ -26,12 +26,12 @@ const NavBar = ({ current }) => {
               </p>
             ) : (
               <p>Published work
-              <img src="img/svg/down-arrow.svg" alt="" />
+              <img src="src/img/svg/down-arrow.svg" className="down-arrow" />
               </p>
             )}
             <div className="dropdown">
               <a href="/articles"> Articles </a>
-              <a href="/video"> Video & Audio </a>
+              <a href="/videos"> Video & Audio </a>
             </div>
           </div>
 

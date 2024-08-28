@@ -29,6 +29,13 @@
     },
     "date": {
       "type": "date"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
