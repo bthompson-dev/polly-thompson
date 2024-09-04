@@ -1,5 +1,7 @@
 :root {
   --central-width: 90rem;
+  --headline-font: "Oswald", sans-serif;
+  --paragraph-font: "Karla", sans-serif;
 }
 
 * {
@@ -31,7 +33,7 @@ nav .title-area__names {
   width: var(--central-width);
   margin: 0 auto;
   color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--headline-font);
 }
 nav .title-area__names h1 {
   font-size: 3.7rem;
@@ -64,7 +66,7 @@ nav .links__container p {
   font-size: 1.4rem;
   font-weight: 600;
   color: black;
-  font-family: "Karla", sans-serif;
+  font-family: var(--paragraph-font);
   transition: color 0.5s;
   padding: 2rem 0;
 }
@@ -123,7 +125,7 @@ nav .links__container--work:hover .dropdown {
 }
 
 .section-header {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--headline-font);
   font-size: 1.5rem;
   font-weight: 300;
   padding-bottom: 5rem;

@@ -7,8 +7,6 @@ const WorkGrid = ({ type }) => {
     `http://localhost:1337/api/${type}?populate=*`
   );
 
-  console.log(data)
-
   return (
     <>
     <div className="work-grid">

@@ -24,7 +24,7 @@
   text-decoration: none;
 }
 #work .work-grid__grid .article {
-  font-family: "Karla", sans-serif;
+  font-family: var(--paragraph-font);
   transition: transform 0.5s;
   cursor: pointer;
 }
@@ -63,9 +63,10 @@
   opacity: 0;
   --transition-speed: 0.6s;
   transition: opacity var(--transition-speed) ease-out, transform var(--transition-speed) ease-out, overlay var(--transition-speed) ease-out allow-discrete, display var(--transition-speed) ease-out allow-discrete;
+  width: min-content;
 }
 #work .work-grid__grid dialog .modal__title {
-  font-family: "Karla", sans-serif;
+  font-family: var(--paragraph-font);
   font-size: 2rem;
   padding: 2rem 3rem 0 3rem;
 }
@@ -84,6 +85,11 @@
   margin: 3rem;
   margin-top: 2rem;
   height: 40rem;
+}
+#work .work-grid__grid dialog .modal__description {
+  font-family: var(--paragraph-font);
+  font-size: 1.6rem;
+  padding: 0 3rem 2rem 3rem;
 }
 #work .work-grid__grid dialog::backdrop {
   background-color: rgba(0, 0, 0, 0);
